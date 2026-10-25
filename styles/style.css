@@ -18,7 +18,7 @@
   list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-child {
   list-style: none;
 }
 
@@ -67,7 +67,7 @@
 
 .overlay {
   position: absolute;
-  background: #00000060;
+  background: rgba(0, 0, 0, 0.6);
   inset: 0;
 }
 
@@ -80,9 +80,6 @@
   flex-direction: column;
   gap: 20px;
   position: relative;
-}
-
-.letter-spacing-extended {
   letter-spacing: 0.3em;
 }
 
@@ -109,7 +106,8 @@
   text-transform: uppercase;
   color: #fff;
   font-size: 22px;
-  line-height: 228%;
+  line-height: 127%;
+  padding-bottom: 11px;
 }
 
 .bet-button {
@@ -119,9 +117,8 @@
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 22px;
-  line-height: 127%;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
 }
 
 .lots {
@@ -144,14 +141,14 @@
 
 .card-link .card {
   height: 100%;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   background-position: center;
-}
-
-.card {
   position: relative;
   width: 334px;
   min-height: 596px;
